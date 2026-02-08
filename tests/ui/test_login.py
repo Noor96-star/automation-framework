@@ -12,5 +12,6 @@ def test_login_valid(driver, base_url):
     login.login(username, password)
 
     # ❌ wrong assertion to fail test
-    assert "inventory123" in driver.current_url
+    assert "inventory" in driver.current_url
+
 
